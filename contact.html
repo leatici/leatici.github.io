@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body class="contact">
+    <header>
+        <nav class="nav" >
+            <li> <a href="menu.html" >  Menu </a></li>
+            <li><a href="../index.html"> Accueil</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </nav>
+        <h1>Contact</h1>
+        <p>34 Rue des Rosiers, 75004 Paris</p>
+    </header>
+    <main>
+        <form id="contactForm" method="post">
+            <label for="email">Votre Adresse Email :</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+            <br>
+            <button type="submit">Envoyer</button>
+        </form>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.0459221665226!2d2.3596743156743927!3d48.857943479287504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671a017f73d95%3A0x9f33de1829f01be8!2s34%20Rue%20des%20Rosiers%2C%2075004%20Paris%2C%20France!5e0!3m2!1sen!2sfr!4v1636643524967!5m2!1sen!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+    </main>
+    <footer >
+        
+        <p><a href="https://www.facebook.com/restaurant">facebook </a> 
+              <br>
+            <a href="https://www.instagram.com/restaurant">instagram</a>
+           <br> l'adresse du restaurant : 34 Rue des Rosiers, 75004 Paris  <br>
+           © 2024 le bon repas | Suivez-nous sur les réseaux sociaux
+        </p>
+         </footer>
+ 
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event){
+            event.preventDefault(); // Empêche le formulaire de se soumettre
+            alert("Votre demande a été envoyée !");
+        });
+    </script>
+
+ 
+</body>
+</html>
